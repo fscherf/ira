@@ -22,7 +22,11 @@ setup(
         'requests',
     ],
     scripts=[
+        'bin/ira',
     ],
     entry_points={
+        'pytest11': [
+            'ira = ira.pytest',
+        ]
     },
 )
